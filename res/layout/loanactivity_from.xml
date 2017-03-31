@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loan_retitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ff8000" >
+
+        <ImageView
+            android:id="@+id/loan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/btn_white_return" />
+
+        <ImageView
+            android:id="@+id/Loan_shrae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_forum_share_n"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="审批流程"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/loan_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="1、贷款人线上提交申请"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/loan_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="       项目部们线下回访→申请人提交所需资料→项目部复核资料初审→风控部门调查考核→风险审核委员会研究后投票决定→贷款审批通过→3日之内放款
+贷款人申请所需提供的资料：身份证 户口本 婚姻状况证明 银行流水 收入证明 个人征信以及相关补充资料"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/loan_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="2、投资者线上提交申请"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/loan_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        资金部门线下回访→双方协商无异议后签订投资意向合同→预约资金→匹配项目→投资人可享有最高年化18%的投资收益"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

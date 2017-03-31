@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="还款方式:"
+                    android:textSize="15dip" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="等额本息" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="等额本金" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="贷款金额:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/allmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/money_exec"
+                    android:background="@null"
+                    android:hint="请输入贷款金额"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/money_exec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="万元"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:id="@+id/tab_xi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="按揭年数:"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tab_nq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="4dip"
+                    android:layout_toLeftOf="@+id/money_exec1"
+                    android:hint="30年(360期)"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/money_exec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_click_right_end" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:id="@+id/tab_lll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="利       率:"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tab_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="4dip"
+                    android:layout_toLeftOf="@+id/money_exec2"
+                    android:text="基准利率"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/money_exec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_click_right_end" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/text_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="公积金贷款利率3.25%"
+                    android:textSize="10dip" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/getlixi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="20dip"
+                android:background="@color/orange"
+                android:text="开始计算"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/showdetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:orientation="vertical"
+                android:paddingBottom="20dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="利率:" />
+
+                <TextView
+                    android:id="@+id/ze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:text="贷款总额:" />
+
+                <TextView
+                    android:id="@+id/setlixi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:text="利息:" />
+
+                <TextView
+                    android:id="@+id/yj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:text="月均还款:" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

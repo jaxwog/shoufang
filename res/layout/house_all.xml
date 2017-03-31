@@ -1,0 +1,434 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/house_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.housefinded.adapter.GridViewofNew
+                android:id="@+id/ppiture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:numColumns="3" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="小区名称:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_titlename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/xq_1"
+                    android:background="@null"
+                    android:hint="请填写小区(必填)"
+                    android:inputType="text"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/triangle" >
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:id="@+id/rent_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/hz_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="合租类型:"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/ht_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/hz_1"
+                    android:onClick="hzType"
+                    android:text="主卧"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/triangle" >
+                </ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/all_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/xq_2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="户       型:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_hx"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="室"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_s"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厅"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_t"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卫"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="面       积:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_mj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/xq_9"
+                    android:background="@null"
+                    android:hint="请输入出租面积"
+                    android:inputType="number"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="平米"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="租       金:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView1"
+                    android:layout_toRightOf="@+id/xq_10"
+                    android:background="@null"
+                    android:hint="请输入租金(必填)"
+                    android:inputType="number"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元/月"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_margin="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配套设施:"
+                    android:textSize="15dip" />
+
+                <GridView
+                    android:id="@+id/house_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:dividerHeight="5dp"
+                    android:numColumns="4"
+                    android:scrollbars="none" >
+                </GridView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="描       述:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_descript"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/xq_5"
+                    android:background="@null"
+                    android:hint="小区环境,交通状况等"
+                    android:inputType="text"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/triangle" >
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="房屋详情:"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/detail_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/xq_6"
+                    android:text="(选填)"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/triangle" >
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="姓      名:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/rent_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/xq_7"
+                    android:background="@null"
+                    android:hint="填写联系人（必填）"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:id="@+id/xq_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="手  机   号:"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/telephone_pub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/xq_8"
+                    android:background="@null"
+                    android:textColor="@color/hs"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <Button
+                android:id="@+id/rent_fabu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:background="@color/orange"
+                android:text="发布" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/z_regisnew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手  机  号:"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/regisnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_style"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="验  证  码:"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/regisyz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_style"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/getmess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sellhouse"
+            android:padding="2dip"
+            android:text="获取验证码"
+            android:textColor="@color/orange"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用  户  名:"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/regisname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_style"
+            android:hint="请输入用户名"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密        码:"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/regispwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_style"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码:"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/regispwdto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_style"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="推  荐  人:"
+            android:textSize="15dip" />
+
+        <RadioGroup
+            android:id="@+id/tjradioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有" />
+
+            <RadioButton
+                android:id="@+id/tj_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:checked="true"
+                android:text="无" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tuijian"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_style"
+        android:ems="10"
+        android:hint="推荐人ID"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="15dip"
+        android:visibility="gone" >
+    </EditText>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hs1" />
+
+    <Button
+        android:id="@+id/takeup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dip"
+        android:background="@color/orange"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+</LinearLayout>

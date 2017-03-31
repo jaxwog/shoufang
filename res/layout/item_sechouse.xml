@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <!-- 屏蔽所有子控件的焦点 这样可使用listview的OnItemClickListener事件 -->
+
+    <ImageView
+        android:id="@+id/house_image"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/img2"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/house_image"
+        android:text="1111111111111111111111111111111111111111111"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_tentype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/house_image"
+        android:singleLine="true"
+        android:text="整组"
+        android:textColor="#C4C4C4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/house_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_tentype"
+        android:singleLine="true"
+        android:text="一室一厅"
+        android:textColor="#C4C4C4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tentype"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/house_image"
+        android:drawableLeft="@drawable/single"
+        android:singleLine="true"
+        android:text="1.4KM"
+        android:textColor="#C4C4C4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/house_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tentype"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/distance"
+        android:singleLine="true"
+        android:text="升龙凤凰城"
+        android:textColor="#C4C4C4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/house_price"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="2000元/月"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/house_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/house_image"
+        android:background="@drawable/back_green"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:text="低首付"
+        android:textColor="@color/orangered"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/house_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/house_1"
+        android:background="@drawable/back_green"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:text="真房源"
+        android:textColor="@color/orangered"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/house_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/house_2"
+        android:background="@drawable/back_green"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:text="BRT"
+        android:textColor="@color/orangered"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_releaser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/house_image"
+        android:layout_alignRight="@+id/house_image"
+        android:layout_margin="3dp"
+        android:background="@color/title"
+        android:padding="2dp"
+        android:text="中介房源"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

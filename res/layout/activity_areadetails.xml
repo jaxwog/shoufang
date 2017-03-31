@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/areadetail_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ff8000" >
+
+            <ImageView
+                android:id="@+id/area_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/btn_white_return" />
+
+            <ImageView
+                android:id="@+id/area_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/area_share"
+                android:src="@drawable/icon_collection" />
+
+            <ImageView
+                android:id="@+id/area_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/xf_share" />
+
+            <TextView
+                android:id="@+id/area_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="小区的名称"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="286px" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </android.support.v4.view.ViewPager>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:background="@color/black"
+                        android:text="1/12"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/cy_second"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/areasecond"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:text="二手房222套" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/triangle" />
+                </LinearLayout>
+
+                <!--
+                     <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:text="环比上月" />
+
+                    <TextView
+                        android:id="@+id/areaup"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:text="1.88%"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+                -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/hs1" />
+
+                <LinearLayout
+                    android:id="@+id/cy_rent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/arearent"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="租房53套" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/triangle" />
+                    </LinearLayout>
+
+                    <!--
+                <fragment
+               android:id="@+id/fragmentname"
+               android:name="com.example.housefinded.achartview.CustomFragment"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content" />
+                    -->
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@color/hs1" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本信息" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="区       域:" />
+
+                        <TextView
+                            android:id="@+id/cy_addres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="进水区眼妆" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建筑类型:" />
+
+                        <TextView
+                            android:id="@+id/cy_leixing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="板楼" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业类型:" />
+
+                        <TextView
+                            android:id="@+id/cy_wylx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="住宅" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建筑年代:" />
+
+                        <TextView
+                            android:id="@+id/cy_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2010-01-01" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产权描述:" />
+
+                        <TextView
+                            android:id="@+id/cy_cq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70年" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物业公司:" />
+
+                        <TextView
+                            android:id="@+id/cy_gs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="河南丹尼斯" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物  业  费:" />
+
+                        <TextView
+                            android:id="@+id/cy_wyf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.86元/平米/月" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开  发  商:" />
+
+                        <TextView
+                            android:id="@+id/cy_kf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="站务纤细" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="绿  化  率:" />
+
+                        <TextView
+                            android:id="@+id/cy_lhl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="31%" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="容  积  率:" />
+
+                        <TextView
+                            android:id="@+id/cy_rjl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.45" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="停  车  位:" />
+
+                        <TextView
+                            android:id="@+id/cy_tcw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地下和地上停车场" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@color/hs1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="小区介绍" />
+
+                <TextView
+                    android:id="@+id/cy_xqjs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="大观或发生大撒旦副驾驶的发就的发了可的三史蒂芬森大幅度萨芬三发 法士大夫大水法的书法沙发党速度发三，发似懂非懂萨芬说法发声方法。发射点发生， 阿三 阿什福上的啊" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@color/hs1" />
+
+                <LinearLayout
+                    android:id="@+id/cell_mapview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="地址:" />
+
+                        <TextView
+                            android:id="@+id/cy_dz"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="玉峰路与复园路交叉口向南200米路西" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triangle" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/map1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@color/hs1" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小区指数" />
+
+                    <TextView
+                        android:id="@+id/cy_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:text="小区名称都属于霸气外露" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/hs1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/z_zhao" />
+
+            <TextView
+                android:id="@+id/areasecond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="二手房(336)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cell_sellhouse"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/hs1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/z_mai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我要卖房 " />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/areabutton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/orange"
+            android:text="评估房源"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

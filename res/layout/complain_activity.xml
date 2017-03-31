@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/complain_for"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+    <TextView
+        android:id="@+id/complain_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="意见内容"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/complain_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/edit_stroke_bg"
+        android:gravity="left|top"
+        android:hint="请留下你的宝贵意见或建议(不少于10个汉字)"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/complain_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="联系电话(必填)"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/complain_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/edit_stroke_bg"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+</LinearLayout>

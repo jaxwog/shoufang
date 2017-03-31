@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title" >
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@drawable/btn_white_return" />
+
+    <TextView
+        android:id="@+id/titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="18dip" />
+
+    <Button
+        android:id="@+id/btnswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="15dip" >
+    </Button>
+
+</RelativeLayout>

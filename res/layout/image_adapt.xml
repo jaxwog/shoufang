@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dip"
+    android:layout_height="100dip" >
+
+    <ImageView
+        android:id="@+id/piture_set"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:background="@drawable/forum_add_pic" />
+
+    <ImageButton
+        android:id="@+id/deletepiture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_d"
+        android:visibility="gone" />
+
+</FrameLayout>

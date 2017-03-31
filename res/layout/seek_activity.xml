@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ff8000" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/btn_white_return" />
+
+        <TextView
+            android:id="@+id/textview_sharesetmeituanback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/title"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:gravity="center_vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_Search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_frame"
+                android:hint="请输入楼盘、小区名"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="32dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivDeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="热门搜索"
+                android:textColor="@color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="龙湖"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="升龙凤凰茶城"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="复式"
+                        android:textColor="@color/green" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="酒店"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="曼哈顿广场"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="西餐"
+                        android:textColor="@color/green" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn7"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="KTV"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn8"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="御玺大厦"
+                        android:textColor="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn9"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_cityselect"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="城中村"
+                        android:textColor="@color/green" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/takepiture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="camera"
+                android:text="拍照上传" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/hs" />
+
+            <Button
+                android:id="@+id/takepiture_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="gallery"
+                android:text="手机相册" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

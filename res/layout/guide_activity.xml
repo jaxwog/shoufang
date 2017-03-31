@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ff8000" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/btn_white_return" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_forum_share_n" />
+
+        <TextView
+            android:id="@+id/textview_sharesetmeituanback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="申请指南"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="1、申请条件"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        郑州市20年以内正规商品房/写字楼/别墅、商铺；全款房、按揭房（按揭房尾款在30%以内）均可申请；经济适用房满5年以上。附注：必须有房产证，小产权房以及房改房不能办理。申请人年龄在20-60周岁且无不良信用记录。"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="2、申请所需资料"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        身份证 户口本 房产证 婚姻状况证明 银行流水 收入证明。"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="3、申请流程"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        申请人提交申请→专业人员电话回访→双方认可签订相关合同→申请人递交资料→公司复核后递交相关银行部门会审→银行审批通过后放款→匹配项目→申请人最高可享有年化18%的收益。"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="4、安全保障"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        四重安全保障，项目第一时间经过征信系统查询是否合规，项目经严格风控部门三次审核， 130%以上的房产抵押物抵押，提供3日代偿保证。"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lineSpacingExtra="3dp"
+                android:padding="3dp"
+                android:text="5、收益说明"
+                android:textColor="@color/title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:lineSpacingExtra="3dp"
+                android:text="        不动产动起来的收益是在不影响申请人房屋的居住或者出租情况下创造的额外收益，最高收益年化18%，净收益约为18%-7.2%=10.8%的年化收益（根据不同合作银行的政策不同会有相应差别）具体数字可参考投资案例。"
+                android:textColor="@color/textgrag"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

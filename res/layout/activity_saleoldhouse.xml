@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/wuye"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="物业类型:"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="4dip"
+                android:layout_toLeftOf="@+id/wy"
+                android:text="普通住宅"
+                android:textColor="@color/hs"
+                android:textSize="15dip" />
+
+            <ImageView
+                android:id="@+id/wy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_click_right_end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/hs1" />
+
+        <RelativeLayout
+            android:id="@+id/makejs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="4dip"
+                android:text="计算方式:"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/jisuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dip"
+                android:layout_toLeftOf="@+id/wy_1"
+                android:text="按总价计算"
+                android:textColor="@color/hs"
+                android:textSize="15dip" />
+
+            <ImageView
+                android:id="@+id/wy_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_click_right_end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/hs1" />
+
+        <RelativeLayout
+            android:id="@+id/nianxian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="房产购置年限:"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/nian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dip"
+                android:layout_toLeftOf="@+id/wy_2"
+                android:text="不满两年"
+                android:textColor="@color/hs"
+                android:textSize="15dip" />
+
+            <ImageView
+                android:id="@+id/wy_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_click_right_end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/hs1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="是否首次购房:"
+                android:textSize="15dip" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/gf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/gf_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/hs1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="是否唯一住房:"
+                android:textSize="15dip" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/wf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/wf1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/hs1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="建筑面积:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/jzm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/pingmi1"
+                    android:background="@null"
+                    android:hint="请输入建筑面积"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/pingmi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="平米"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="总       价:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/doller1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/danjian1"
+                    android:background="@null"
+                    android:hint="请输入总价"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/danjian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="万元"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <RelativeLayout
+                android:id="@+id/actionas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="原       价:"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/yuanjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/danjian2"
+                    android:background="@null"
+                    android:hint="请输入总价"
+                    android:inputType="number"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/danjian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="万元"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/hs1" />
+
+            <Button
+                android:id="@+id/run1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:background="@color/orange"
+                android:text="开始计算"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sodetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="税金明细"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/ofkzj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="房款总价"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/yys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="营业税"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/oqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="契税"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/grs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="个人所得税"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/oyhs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="印花税"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/osjze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="税金总额"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dip"
+    android:layout_height="wrap_content"
+    android:layout_margin="9dip" >
+
+    <CheckBox
+        android:id="@+id/check_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_style_1"
+        android:button="@color/hs1"
+        android:text="你们好啊" />
+
+</RelativeLayout>
